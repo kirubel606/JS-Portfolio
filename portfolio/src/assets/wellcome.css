@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .welcomemsg {
+
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .welcomemsg h1 {
+    font-size: 3em;
+  }
+  
+/* assets/welcome.css */
+
+.neontext {
+    color: rgb(17, 21, 59); /* Set the text color */
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bolder;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+
+  }
+  
+  @keyframes neonGlow {
+    from {
+      text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+    to {
+      text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 0.9), 0 0 15px rgba(255, 255, 255, 0.9);
+    }
+  }
+  
+  
