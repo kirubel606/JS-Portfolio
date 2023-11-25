@@ -5,6 +5,7 @@ import astronautImage from '../assets/images/spaceman.png';
 import Wellcome from '../components/wellcome';
 import AboutMe from '../components/Aboutme';
 import Counter from '../components/counter';
+import Contact from './contact';
 
 const Index = () => {
   return (
@@ -14,8 +15,10 @@ const Index = () => {
       <img src={astronautImage} alt="Astronaut" className="astronaut" /> 
       <Wellcome/>
       </div>
-      <Counter/>
+     
       <AboutMe/>
+      <Counter/>
+      <Contact/>
     </div>
   )
 }

@@ -3,11 +3,11 @@ import Navbare from '../components/navbar';
 import Amongus from '../assets/images/Amongus.png';
 import "../assets/contact.css";
 import { AiFillInstagram, AiFillPhone, AiFillLinkedin, AiFillFacebook, AiFillGithub } from "react-icons/ai";
+import { ImLocation2 } from "react-icons/im";
 
 const Contact = () => {
   return (
     <div className='bg-black'>
-      <Navbare />
       <div className="container containero">
         <div className="row">
           <div className="text-center col-md-3">
@@ -23,17 +23,22 @@ const Contact = () => {
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className=" text-white   text-decoration-none" style={{paddingLeft:"3%"}}>
                   <AiFillFacebook className="me-2 icone"/>
                 </a>
+                <a href="https://github.com/kirubel606" target="_blank" rel="noopener noreferrer" className=" text-white   text-decoration-none" style={{paddingLeft:"3%"}}>
+                  <AiFillGithub className="me-2 icone"/>
+                </a>
               </div>
           </div>
 
           <div className="col-md-3"></div>
 
           <div className="col-md-6 text-center">
-            <h1 className='text-white mt-5'>Contact</h1>
-            <h4 className='mb-5' style={{ color: "rgba(223, 223, 223, 0.8)" }}>How can we work together?</h4>
+            <h1 className='text-white mt-2'>Contact</h1>
+            <h4 className='mb-2' style={{ color: "rgba(223, 223, 223, 0.8)" }}>How can we work together?</h4>
+            <p className='' style={{ color: "rgba(223, 223, 223, 0.8)" }}>Unlock new possibilities and collaboration by reaching out via email – together, let's turn your ideas into impactful projects and make great things happen!</p>
             <div className="d-flex flex-column">
-              <div className="d-flex align-items-center mb-2">
+              <div className=" d-flex align-items-center mb-2">
                 <i className="bi bi-geo-alt-fill text-white me-2"></i>
+                <ImLocation2 className='me-2 text-white'/>
                 <p className="text-white mb-0">Ayat/Lemi kura</p>
               </div>
               <div className="d-flex align-items-center mb-2">

@@ -1,3 +1,25 @@
 .aboutme{
-    background-color: aliceblue;
+    height:670px;
 }
+
+.droptogle{
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.dropdown-items{
+    color: rgb(161, 161, 161);
+    background-color: black;
+    border-top: 0;
+    transition: 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .aboutme{
+        height: 100%;
+    }
+  }

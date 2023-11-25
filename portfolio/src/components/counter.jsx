@@ -31,7 +31,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="p-4 bg-dark" style={{ backdropFilter: 'blur(10px)' }}>
+    <div className="p-4 bg-black" style={{ backdropFilter: 'blur(10px)' }}>
       <div className="container">
         <div className="row" style={{ color: '#fff' }}>
           <div className="col-12 col-md-3 border-end countup-container">

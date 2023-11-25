@@ -1,6 +1,13 @@
 .navbare{
-    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 11%, rgba(2,2,7,0.7203256302521008) 61%, rgba(0,0,0,0.6138830532212884) 70%, rgba(0,0,0,0.28335084033613445) 85%, rgba(0,0,0,0) 99%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 11%, rgba(2,2,7,0.7203256302521008) 61%, rgba(0,0,0,0.6138830532212884) 70%, rgba(0,0,0,0.28335084033613445) 85%, rgba(0,0,0,0) 99%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 11%, rgba(2,2,7,0.7203256302521008) 61%, rgba(0,0,0,0.6138830532212884) 70%, rgba(0,0,0,0.28335084033613445) 85%, rgba(0,0,0,0) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
     color: aliceblue;
+    z-index: 3;
 }
 .middleitems{
     margin-left: 15%;
@@ -11,7 +18,7 @@
     font-weight:bolder;
 }
 .brandlogo:hover{
-    color: rgb(158, 158, 209);
+    color: #9e9ed1;
 }
 
   /* Hover styles for larger screens */
