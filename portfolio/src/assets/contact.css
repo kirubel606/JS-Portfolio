@@ -1,0 +1,17 @@
+.containero{
+    height:605px;
+}
+.icone{
+    font-size:50px;
+    
+}
+.icone:hover{
+    font-size:60px;
+    color: rgb(118, 145, 255);
+    transition:  0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .containero{
+        height: 100%;
+    }
+  }
