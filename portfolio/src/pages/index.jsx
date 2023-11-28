@@ -17,7 +17,7 @@ const Index = () => {
       </div>
      
       <AboutMe/>
-      <Counter/>
+
       <Contact/>
     </div>
   )

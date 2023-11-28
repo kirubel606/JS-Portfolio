@@ -11,7 +11,7 @@ body {
   }
 
 .spacex {
-    height: 100vh; /* Set the height to 100% of the viewport height */
+    height: 110vh; /* Set the height to 100% of the viewport height */
     background-image: url('../assets/images/space.jpg'); /* Adjust the path based on your folder structure */
     background-size: cover; /* Ensure the background image covers the entire div */
     background-position: center; /* Center the background image */

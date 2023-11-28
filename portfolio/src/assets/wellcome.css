@@ -5,13 +5,19 @@ body {
 
   .welcomemsg {
 
-    height: 605px;
+    height: 665px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 2;
   }
   
+  @media (max-width: 768px) {
+    .prpic{
+      width:50%;
+    }
+  }
+
   .welcomemsg h1 {
     font-size: 3em;
   }
