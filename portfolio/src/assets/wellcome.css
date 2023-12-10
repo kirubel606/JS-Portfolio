@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+   
   }
 
   .welcomemsg {
@@ -23,6 +24,20 @@ body {
   }
   
 /* assets/welcome.css */
+
+
+@font-face {
+  font-family: 'spaceFont';
+  src: url('../assets/nasalization-rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.futurefont {
+  font-family: 'spaceFont', sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Adjust the values as needed */
+}
 
 .neontext {
     color: rgb(17, 21, 59); /* Set the text color */

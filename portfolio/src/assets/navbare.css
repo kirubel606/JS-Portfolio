@@ -10,7 +10,7 @@
     z-index: 3;
 }
 .middleitems{
-    margin-left: 15%;
+    margin-left: 7%;
 }
 .brandlogo{
     color:rgb(247, 247, 253);
@@ -30,15 +30,14 @@
     border-bottom: 2px solid transparent; /* Initially set to transparent */
     transition: border-bottom 0.3s ease-in-out; 
     font-size: large;
-    font-weight: bold;
-    font-family:'Chakra Petch', sans-serif;
   }
 
  .navlink:hover {
   border-bottom: 2px solid rgb(241, 241, 243); /* Change the color on hover */
-  color: rgb(158, 158, 209) !important;
-  background-color: rgba(207, 207, 255, 0.062);
+  color: rgb(196, 145, 255) !important;
 }
+
+
 #basic-nav-dropdown{
     color: aliceblue;
 }

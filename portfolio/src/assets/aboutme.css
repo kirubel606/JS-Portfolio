@@ -1,8 +1,10 @@
 .aboutme{
-    height:667px;
+    height:100vh;
+    z-index: 1;
 }
 .accordion{
     width: 100%;
+
 }
 .accordion-item{
     color: rgb(161, 161, 161);

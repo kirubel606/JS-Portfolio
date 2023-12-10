@@ -1,0 +1,72 @@
+.spacex2 {
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-image: url('../assets/images/space2.jpg'); /* Adjust the path based on your folder structure */
+    background-size: cover; /* Ensure the background image covers the entire div */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .experience-title {
+    color: white;
+    font-size: 2em; /* Adjust the font size as needed */
+  }
+
+  /* Styles for the page container */
+.page-container {
+    height: 700px; /* Make the container take the full height of the viewport */
+    overflow: hidden; /* Hide any potential overflow */
+    position: relative;
+  }
+  
+
+  
+  /* Styles for the top-div and bottom-div */
+  .top-div{
+    height: 100px;
+    background: rgb(59,56,55);
+background: -moz-linear-gradient(0deg, rgba(59,56,55,0) 0%, rgba(38,31,29,0.8547794117647058) 48%, rgb(0, 0, 0) 78%, rgb(0, 0, 0) 100%);
+background: -webkit-linear-gradient(0deg, rgba(59,56,55,0) 0%, rgba(38,31,29,0.8547794117647058) 48%, rgb(0, 0, 0) 78%, rgb(0, 0, 0) 100%);
+background: linear-gradient(0deg, rgba(59,56,55,0) 0%, rgba(38,31,29,0.8547794117647058) 48%, rgb(0, 0, 0) 78%, rgb(0, 0, 0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3837",endColorstr="#0e0300",GradientType=1);
+    }
+  .bottom-div {
+    height: 100px; /* Adjust the height as needed */
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(19,9,6,1) 26%, rgba(38,31,29,0.865983893557423) 53%, rgba(59,56,55,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(19,9,6,1) 26%, rgba(38,31,29,0.865983893557423) 53%, rgba(59,56,55,0) 100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(19,9,6,1) 26%, rgba(38,31,29,0.865983893557423) 53%, rgba(59,56,55,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e0300",endColorstr="#3b3837",GradientType=1);
+    position: absolute;
+    width: 100%;
+  }
+  .top-div {
+    top: 0;
+  }
+  
+  .bottom-div {
+    bottom: 0;
+  }
+
+
+  @media (max-width: 998px) {
+    .xpimage{
+      max-width: 120px;
+    }
+    .xptitle{
+        font-size: small;
+    }
+
+    .xpparagraph{
+        font-size:x-small;
+    }
+  }
+  
+
+  .xpimage{
+    max-width: 200px;
+  }
+
+  

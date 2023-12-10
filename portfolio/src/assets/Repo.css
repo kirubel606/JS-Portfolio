@@ -1,0 +1,44 @@
+/* GitHubRepositories.css */
+#projects{
+    overflow: hidden;
+}
+.projectzone{
+    width: 90%;
+    text-align: center;
+}
+
+.github-card h5.card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.github-card {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.7), 0 0 10px rgba(173, 216, 230, 0.5), 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    height: 230px;
+  }
+  
+  .github-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.9), 0 0 20px rgba(173, 216, 230, 0.7), 0 0 25px rgba(255, 255, 255, 1); /* Enhanced glow effect on hover */
+  }
+  
+  /* Custom class for the "View on GitHub" button */
+.githubbutton {
+    color: #3498db; /* Set the text color to a light blue color */
+    border-color: #3498db; /* Set the border color to a light blue color */
+  }
+  
+  .github-card .githubbutton:hover {
+    color: #7a00b3; /* Set the text color to a slightly darker blue color on hover */
+    background-color: #eff3f0;
+    border-color: #f7f7f7; /* Set the border color to a slightly darker blue color on hover */
+  }
+
+  .card-text{
+    color: rgb(194, 194, 194);
+  }

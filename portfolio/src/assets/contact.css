@@ -1,6 +1,7 @@
 .containero{
-    height:605px;
+    height:670px;
 }
+
 .icone{
     font-size:50px;
     
@@ -8,10 +9,17 @@
 .icone:hover{
     font-size:60px;
     color: rgb(118, 145, 255);
-    transition:  0.3s ease-in-out;
+    transition:  0.2s ease-in-out;
 }
 @media (max-width: 768px) {
     .containero{
         height: 100%;
     }
   }
+
+  .transparent-input {
+    background-color: transparent;
+    border: 1px solid rgb(188, 206, 255); /* Add border to make the input fields visible */
+    color: white; /* Set text color to white */
+  }
+  

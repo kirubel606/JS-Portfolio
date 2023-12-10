@@ -4,8 +4,10 @@ import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './pages/App.jsx'
 import Contact from "./pages/contact.jsx";
+import Exp from "./pages/experience.jsx";
 import Index from "./pages/index.jsx";
 import About from "./components/Aboutme.jsx";
+import Repo from "./pages/repos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>,
+  },
+  {
+    path: "/repo",
+    element: <Repo/>,
   },
 ]);
 

@@ -5,8 +5,8 @@ import profile from "../assets/images/profile.png";
 const AboutMe = () => {
 
   return (
-    <div className="aboutme bg-black">
-      <div className="container">
+    <div className="aboutme bg-black"  id="about-me">
+      <div className="container" style={{marginBottom:"110px",marginTop:"30px"}}>
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col-md-2 mb-4 " style={{ marginTop: "100px" }}>
             <img
@@ -19,7 +19,7 @@ const AboutMe = () => {
 
         <div className="row">
           <div className=" abouthim text-white col-md-6">
-            <h2 >About Me</h2>
+            <h2 className='futurefont text-white'>About Me</h2>
             <p>
               Hello! I'm Kirubel Fekadu, a computer science graduate from Ethiopia. I'm a versatile professional with a passion for development, data science, and digital art. With a diverse skill set and proficiency in various technologies and programming languages, I bring immediate value to businesses looking to turn their ideas into reality.
             </p>
@@ -29,11 +29,11 @@ const AboutMe = () => {
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Development
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p class="mb-0">
                       As a professional in <strong>Development</strong>, I specialize in creating web and application solutions using a variety of technologies and frameworks. My expertise includes:

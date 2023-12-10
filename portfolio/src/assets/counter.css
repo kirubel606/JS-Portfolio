@@ -1,0 +1,23 @@
+.counterbg{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 26%, rgba(0,0,2,1) 42%, rgba(0,0,1,1) 53%, rgba(1,1,4,0.9444152661064426) 68%, rgba(2,2,7,0.5802696078431373) 85%, rgba(0,0,0,0.4766281512605042) 86%, rgba(0,0,0,0.011642156862745057) 94%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 26%, rgba(0,0,2,1) 42%, rgba(0,0,1,1) 53%, rgba(1,1,4,0.9444152661064426) 68%, rgba(2,2,7,0.5802696078431373) 85%, rgba(0,0,0,0.4766281512605042) 86%, rgba(0,0,0,0.011642156862745057) 94%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 26%, rgba(0,0,2,1) 42%, rgba(0,0,1,1) 53%, rgba(1,1,4,0.9444152661064426) 68%, rgba(2,2,7,0.5802696078431373) 85%, rgba(0,0,0,0.4766281512605042) 86%, rgba(0,0,0,0.011642156862745057) 94%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);   
+}
+
+
+@font-face {
+    font-family: 'AlarmClockFont';
+    src: url('../assets/alarmclock.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .clocknumber {
+    font-family: 'AlarmClockFont', sans-serif;
+    color: aqua;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Adjust the values as needed */
+  }
+  
+  
