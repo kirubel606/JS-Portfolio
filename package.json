@@ -2,6 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kirubel606.github.io/JS-Portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
