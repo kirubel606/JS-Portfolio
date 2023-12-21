@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Tilt from 'react-parallax-tilt';
 import Navbare from '../components/navbar';
 import '../assets/index.css';
@@ -12,15 +12,36 @@ import GitHubRepositories from './repos';
 import Techs from '../components/techs';
 
 const Index = () => {
+  const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const img = imgRef.current;
+
+    function handleLoad() {
+      // Introduce a delay before switching to the high-resolution image
+      setTimeout(() => {
+        setLoaded(true);
+      }, 650); // Adjust the delay time as needed
+    }
+
+    if (img.complete) {
+      handleLoad();
+    } else {
+      img.addEventListener('load', handleLoad);
+    }
+
+    return () => {
+      img.removeEventListener('load', handleLoad);
+    };
+  }, []);
+
   return (
-    <div className='spacex'>
+    <div className={`spacex ${loaded ? 'high-res-loaded' : ''}`}>
       <Navbare />
       <div>
-        
-          <img src={astronautImage} alt="Astronaut" className="astronaut" />
-        
+        <img ref={imgRef} src={astronautImage} alt="Astronaut" className="astronaut" />
         <Wellcome />
-        
       </div>
       <Counter />
       <AboutMe />

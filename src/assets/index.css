@@ -10,18 +10,27 @@ body {
   ::-webkit-scrollbar {
     width: 0; /* Set the width of the scrollbar to 0 */
   }
-
-.spacex {
-    height: 110vh; /* Set the height to 100% of the viewport height */
-    background-image: url('../assets/images/space.jpg'); /* Adjust the path based on your folder structure */
-    background-size: cover; /* Ensure the background image covers the entire div */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+  
+ 
+  .spacex {
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-  
-    
+    background-image: url('../assets/images/space1.jpg');
+    transition: background-image 0.7s ease-in-out; /* Adjust the transition duration as needed */
   }
+  
+  .spacex.high-res-loaded {
+    background-image: url('../assets/images/space.jpg');
+  }
+  
+  
+  
+  
+  
 
   .astronaut {
     position:absolute;
