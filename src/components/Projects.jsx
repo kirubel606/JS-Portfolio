@@ -1,7 +1,6 @@
 // GitHubRepositories.js
 
 import React, { useState, useEffect } from 'react';
-import '../assets/Repo.css'; // Import the custom CSS file
 import Tilt from 'react-parallax-tilt';
 
 const GitHubRepositories = () => {
