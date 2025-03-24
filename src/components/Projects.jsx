@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
 
-const GitHubRepositories = () => {
+const Projects = () => {
   const [repos, setRepos] = useState([]);
 
   // Array for repository names to exclude
@@ -49,4 +49,4 @@ const GitHubRepositories = () => {
   );
 };
 
-export default GitHubRepositories;
+export default Projects;
