@@ -25,9 +25,9 @@ function Hero() {
         delaySpeed={1000}
       />
     </h1>
-      <button className="mt-6 px-6 py-3 neumorphism text-gray-900 font-bold text-lg dark:text-white">
-        View My Work
-      </button>
+      <a href="/about" className="mt-6 px-6 py-3 neumorphism text-gray-900 font-bold text-lg dark:text-white">
+        Get to know me more
+      </a>
     </div>
   );
 }
