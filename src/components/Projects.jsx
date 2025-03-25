@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <div data-theme={theme} className='bg-[#e5e5e5] dark:bg-[#2d2d2d] w-full min-h-screen flex flex-col justify-center items-center py-12'>
       <h2 className='text-3xl font-semibold text-center dark:text-white text-gray-900 mb-10'>
-        Projects
+        My Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-10 sm:mx-36">
         {currentRepos.map(repo => (

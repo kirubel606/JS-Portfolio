@@ -32,3 +32,41 @@
 .dark .neumorphism-inset {
     @apply bg-[#2a2a2a] shadow-[inset_6px_6px_12px_#222222,_inset_-6px_-6px_12px_#444444];
 }
+
+/* Set custom properties for inset shadow in light theme */
+:root,
+[data-theme="light"] {
+  --inset-shadow: inset 8px 8px 12px #cfcfcf, inset -8px -8px 12px #ffffff;
+}
+
+/* Set custom properties for inset shadow in dark theme */
+[data-theme="dark"] {
+  --inset-shadow: inset 6px 6px 10px #2a2a2a, inset -6px -6px 10px #404040;
+}
+
+
+.inset-hover {
+  position: relative;
+  overflow: hidden;
+  cursor: none; /* Hide the default mouse cursor */
+}
+
+.inset-hover::before {
+  content: "";
+  position: absolute;
+  top: var(--mouse-y, 50%);
+  left: var(--mouse-x, 50%);
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  /* Use the custom property for the inset shadow */
+  box-shadow: var(--inset-shadow);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inset-hover:hover::before {
+  opacity: 1;
+}

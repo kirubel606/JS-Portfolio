@@ -4,8 +4,16 @@ import { useLocation } from "react-router-dom";
 function Hero() {
     const { theme, toggleTheme } = useTheme(); // Access the theme context
     const location = useLocation(); 
+    const handleMouseMove = (e) => {
+      const { left, top } = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
+      // Set CSS variables for the mouse position relative to the div
+      e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+      e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    };
   return (
-    <div data-theme={theme} className="flex flex-col items-center justify-center h-screen text-center bg-[#e5e5e5] dark:bg-[#2d2d2d]">
+    <div data-theme={theme} onMouseMove={handleMouseMove} className="flex flex-col inset-hover items-center justify-center h-screen text-center bg-[#e5e5e5] dark:bg-[#2d2d2d]">
       {location.pathname === "/" ? ( 
           <img 
               src="./profile.jpg" 

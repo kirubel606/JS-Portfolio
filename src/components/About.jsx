@@ -2,9 +2,18 @@ import { useTheme } from '../context/context'; // Import the context
 
 function About() {
     const { theme } = useTheme(); // Access the theme context
-    
+    const handleMouseMove = (e) => {
+      const { left, top } = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
+      // Set CSS variables for the mouse position relative to the div
+      e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+      e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    };
+
+
     return (
-    <div data-theme={theme} className='bg-[#e5e5e5] dark:bg-[#2d2d2d] w-full min-h-screen flex justify-center items-center'>
+    <div data-theme={theme} onMouseMove={handleMouseMove} className='bg-[#e5e5e5] inset-hover dark:bg-[#2d2d2d] w-full min-h-screen flex justify-center items-center'>
       <div className="p-10 max-w-5xl text-center mt-20 rounded-lg">
         <h2 className="text-4xl font-bold text-gray-900 dark:text-white">About Me</h2>
         <p className="text-lg text-gray-700 dark:text-gray-400 mt-4 max-w-3xl mx-auto">
