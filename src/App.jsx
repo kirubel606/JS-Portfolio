@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import { useLocation } from "react-router-dom";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 function Nav() {
   const { theme, toggleTheme } = useTheme(); // Access the theme context
   const [menuOpen, setMenuOpen] = useState(false); // State for menu toggle
+  const location = useLocation(); 
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen); // Toggle the menu state
@@ -58,30 +60,43 @@ console.log(theme);
           </ul>
         </div>
       </div>
+      <div className='dark:bg-[#2d2d2d]  bg-[#e5e5e5]'>
+        <div className="fixed top-6 left-6 space-y-4 z-50  sm:flex sm:flex-col sm:space-y-5 sm:space-x-4 dark:bg-[#2d2d2d]  bg-[#e5e5e5]">
+        {location.pathname !== "/" && !menuOpen ? ( 
+            <img 
+                src="./profile.jpg" 
+                alt="Profile"
+                className="w-20 neumorphism rounded-4xl shadow-lg"
+            />
+        ) : null}
 
-      {/* Floating Icon Buttons */}
-      <div className="fixed top-6 right-6 space-y-4 z-50  sm:flex sm:flex-col sm:space-y-5 sm:space-x-4">
-        {/* Hamburger Icon */}
-        <button
-          onClick={toggleMenu}
-          className="p-4 mx-2 rounded-full neumorphism bg-white dark:bg-[#363636] shadow-xl hover:shadow-2xl focus:outline-none"
-        >
-          <FaBars className="text-2xl text-gray-800 dark:text-white" />
-        </button>
 
-        {/* Theme Toggle Button */}
-        <button
-          onClick={toggleTheme}
-          className="p-4 mx-2 rounded-full neumorphism bg-white dark:bg-[#2a2a2a] shadow-xl hover:shadow-2xl focus:outline-none"
-        >
-          {theme === 'light' ? (
-            <FaMoon className="text-2xl text-gray-800 dark:text-white" />
-          ) : (
-            <FaSun className="text-2xl text-gray-800 dark:text-white" />
-          )}
-        </button>
-        
+        </div>
+        {/* Floating Icon Buttons */}
+        <div className="fixed top-6 right-6 space-y-4 z-50 neumorphism p-2  sm:flex sm:flex-col sm:space-y-5 sm:space-x-4 dark:bg-[#2d2d2d]  bg-[#e5e5e5]">
+          {/* Hamburger Icon */}
+          <button
+            onClick={toggleMenu}
+            className="p-4 mx-2 rounded-full neumorphism bg-white dark:bg-[#363636] shadow-xl hover:shadow-2xl focus:outline-none"
+          >
+            <FaBars className="text-2xl text-gray-800 dark:text-white" />
+          </button>
+
+          {/* Theme Toggle Button */}
+          <button
+            onClick={toggleTheme}
+            className="p-4 mx-2 rounded-full neumorphism bg-white dark:bg-[#2a2a2a] shadow-xl hover:shadow-2xl focus:outline-none"
+          >
+            {theme === 'light' ? (
+              <FaMoon className="text-2xl text-gray-800 dark:text-white" />
+            ) : (
+              <FaSun className="text-2xl text-gray-800 dark:text-white" />
+            )}
+          </button>
+          
+        </div>
       </div>
+
     </div>
   );
 }

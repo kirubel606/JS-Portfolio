@@ -1,7 +1,7 @@
 import { useTheme } from '../context/context'; // Import the context
 
 function About() {
-    const { theme, toggleTheme } = useTheme(); // Access the theme context
+    const { theme } = useTheme(); // Access the theme context
     
     return (
     <div data-theme={theme} className='bg-[#e5e5e5] dark:bg-[#2d2d2d] w-full min-h-screen flex justify-center items-center'>
