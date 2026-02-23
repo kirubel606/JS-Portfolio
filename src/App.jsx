@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
+import FeaturedAdmin from './components/FeaturedAdmin';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/adgjm" element={<FeaturedAdmin />} />
         </Routes>
       </Router>
     </ThemeProvider>

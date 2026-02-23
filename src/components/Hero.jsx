@@ -2,7 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import {useTheme } from '../context/context'; // Import the context
 import { useLocation } from "react-router-dom";
 function Hero() {
-    const { theme, toggleTheme } = useTheme(); // Access the theme context
+    const { theme } = useTheme(); // Access the theme context
     const location = useLocation(); 
     const handleMouseMove = (e) => {
       const { left, top } = e.currentTarget.getBoundingClientRect();
@@ -15,11 +15,13 @@ function Hero() {
   return (
     <div data-theme={theme} onMouseMove={handleMouseMove} className="flex flex-col inset-hover items-center justify-center h-screen text-center bg-[#e5e5e5] dark:bg-[#2d2d2d]">
       {location.pathname === "/" ? ( 
-          <img 
-              src="./profile.jpg" 
+          <div className="absolute top-8 sm:top-8 w-56 h-56 sm:w-44 sm:h-44 rounded-[2rem] overflow-hidden neumorphism p-2">
+            <img
+              src="./profile.jpg"
               alt="Profile"
-              className="absolute top-1/8 w-60 sm:w-40 rounded-full mb-4 neumorphism"
-          />
+              className="w-full h-full rounded-[1.5rem] object-cover object-[50%_15%] scale-125"
+            />
+          </div>
       ) : null}
     <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">Hey, I'm <span className="text-blue-600">[Kirubel Fekadu]</span></h1>
     <h1 className="text-xl font-bold relative p-2 text-gray-900 dark:text-white">

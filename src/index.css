@@ -70,3 +70,19 @@
 .inset-hover:hover::before {
   opacity: 1;
 }
+
+.featured-neumorphism {
+  @apply bg-[#ececec] rounded-2xl shadow-[10px_10px_22px_#c2c2c2,_-10px_-10px_22px_#ffffff] transition-all duration-300;
+}
+
+.dark .featured-neumorphism {
+  @apply bg-[#303030] shadow-[10px_10px_22px_#202020,_-10px_-10px_22px_#424242];
+}
+
+.featured-neumorphism-inset {
+  @apply bg-[#e6e6e6] shadow-[inset_6px_6px_14px_#c8c8c8,_inset_-6px_-6px_14px_#ffffff] rounded-xl;
+}
+
+.dark .featured-neumorphism-inset {
+  @apply bg-[#2c2c2c] shadow-[inset_6px_6px_14px_#1f1f1f,_inset_-6px_-6px_14px_#3f3f3f];
+}
