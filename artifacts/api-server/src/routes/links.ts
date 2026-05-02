@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { verifyAuthHeader } from "./admin.js";
 
 const router = Router();
 
@@ -46,6 +47,14 @@ function isValidUrl(value: string): boolean {
   }
 }
 
+function requireAuth(req: any, res: any): boolean {
+  if (!verifyAuthHeader(req.headers["authorization"])) {
+    res.status(401).json({ error: "Unauthorized." });
+    return false;
+  }
+  return true;
+}
+
 router.get("/links", async (req, res) => {
   try {
     const links = await readLinks();
@@ -57,6 +66,8 @@ router.get("/links", async (req, res) => {
 });
 
 router.post("/links", async (req, res) => {
+  if (!requireAuth(req, res)) return;
+
   const { title, description, url } = req.body as Partial<LinkItem>;
 
   if (!url || !isValidUrl(url)) {
@@ -76,6 +87,8 @@ router.post("/links", async (req, res) => {
 });
 
 router.put("/links", async (req, res) => {
+  if (!requireAuth(req, res)) return;
+
   const { id, title, description, url } = req.body as Partial<LinkItem>;
 
   if (!id) {
@@ -101,6 +114,8 @@ router.put("/links", async (req, res) => {
 });
 
 router.delete("/links", async (req, res) => {
+  if (!requireAuth(req, res)) return;
+
   const id = req.query.id as string;
 
   if (!id) {
