@@ -1,25 +1,55 @@
 {
   "bio": "I'm a passionate Full-Stack Developer with expertise in React, Django, and modern web technologies. I love building creative and interactive web applications that provide excellent user experiences.",
   "stats": [
-    { "id": "stat-1", "label": "Years Experience", "value": "3+" },
-    { "id": "stat-2", "label": "Projects Built", "value": "20+" },
-    { "id": "stat-3", "label": "Technologies", "value": "15+" }
+    {
+      "id": "stat-1",
+      "label": "Years Experience",
+      "value": "3+"
+    },
+    {
+      "id": "stat-2",
+      "label": "Projects Built",
+      "value": "20+"
+    },
+    {
+      "id": "stat-3",
+      "label": "Technologies",
+      "value": "15+"
+    }
   ],
   "skills": [
     {
       "id": "skill-cat-1",
       "category": "Frontend",
-      "items": ["React.js", "Next.js", "Redux", "Tailwind CSS", "Framer Motion"]
+      "items": [
+        "React.js",
+        "Next.js",
+        "Redux",
+        "Tailwind CSS",
+        "Framer Motion"
+      ]
     },
     {
       "id": "skill-cat-2",
       "category": "Backend",
-      "items": ["Python", "Django", "Node.js", "REST APIs", "GraphQL"]
+      "items": [
+        "Python",
+        "Django",
+        "Node.js",
+        "REST APIs",
+        "GraphQL"
+      ]
     },
     {
       "id": "skill-cat-3",
       "category": "Tools & DevOps",
-      "items": ["Git", "GitHub", "Docker", "Figma", "VS Code"]
+      "items": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Figma",
+        "VS Code"
+      ]
     }
   ],
   "experience": [
@@ -39,6 +69,6 @@
     }
   ],
   "contact": {
-    "email": "kirubel606@gmail.com"
+    "email": "kiruabatu@gmail.com"
   }
 }
