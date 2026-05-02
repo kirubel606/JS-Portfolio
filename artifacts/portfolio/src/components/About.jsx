@@ -9,9 +9,9 @@ const CATEGORY_ICONS = {
 };
 
 const CATEGORY_COLORS = [
-  { pill: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300', dot: 'bg-blue-400' },
-  { pill: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300', dot: 'bg-emerald-400' },
-  { pill: 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300', dot: 'bg-violet-400' },
+  { pill: 'text-gray-700 dark:text-gray-300', dot: 'bg-gray-400 dark:bg-gray-500' },
+  { pill: 'text-gray-700 dark:text-gray-300', dot: 'bg-gray-400 dark:bg-gray-500' },
+  { pill: 'text-gray-700 dark:text-gray-300', dot: 'bg-gray-400 dark:bg-gray-500' },
 ];
 
 const fadeUp = (delay = 0) => ({
