@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant light (&:where([data-theme=light], [data-theme=light] *));
+
+.neumorphism {
+    @apply bg-[#e7e7e7] shadow-[6px_6px_12px_#bebebe,_-6px_-6px_12px_#ffffff] rounded-lg transition-all ease-in-out duration-300;
+  }
+  
+  .dark .neumorphism {
+    @apply bg-[#2a2a2a] shadow-[6px_6px_12px_#222222,_-6px_-6px_12px_#444444];
+  }
+  
+  .neumorphism:hover {
+    @apply shadow-[inset_4px_4px_6px_#cfcfcf,_inset_-4px_-4px_6px_#ffffff];
+}
+   
+.dark .neumorphism:hover {
+    @apply shadow-[inset_3px_3px_5px_#2a2a2a,_inset_-3px_-3px_5px_#404040];
+}
+  .neumorphism-static {
+    @apply bg-[#e7e7e7] shadow-[6px_6px_12px_#bebebe,_-6px_-6px_12px_#ffffff] rounded-lg transition-all ease-in-out duration-300;
+}
+  
+.dark .neumorphism-static {
+    @apply bg-[#2a2a2a] shadow-[6px_6px_12px_#222222,_-6px_-6px_12px_#444444];
+}
+.neumorphism-inset {
+    @apply bg-[#e7e7e7] shadow-[inset_6px_6px_12px_#bebebe,_inset_-6px_-6px_12px_#ffffff] rounded-lg transition-all ease-in-out duration-300;
+}
+  
+.dark .neumorphism-inset {
+    @apply bg-[#2a2a2a] shadow-[inset_6px_6px_12px_#222222,_inset_-6px_-6px_12px_#444444];
+}
+
+:root,
+[data-theme="light"] {
+  --inset-shadow: inset 8px 8px 12px #cfcfcf, inset -8px -8px 12px #ffffff;
+}
+
+[data-theme="dark"] {
+  --inset-shadow: inset 6px 6px 10px #2a2a2a, inset -6px -6px 10px #404040;
+}
+
+.inset-hover {
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.inset-hover::before {
+  content: "";
+  position: absolute;
+  top: var(--mouse-y, 50%);
+  left: var(--mouse-x, 50%);
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: var(--inset-shadow);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inset-hover:hover::before {
+  opacity: 1;
+}
+
+.featured-neumorphism {
+  @apply bg-[#ececec] rounded-2xl shadow-[10px_10px_22px_#c2c2c2,_-10px_-10px_22px_#ffffff] transition-all duration-300;
+}
+
+.dark .featured-neumorphism {
+  @apply bg-[#303030] shadow-[10px_10px_22px_#202020,_-10px_-10px_22px_#424242];
+}
+
+.featured-neumorphism-inset {
+  @apply bg-[#e6e6e6] shadow-[inset_6px_6px_14px_#c8c8c8,_inset_-6px_-6px_14px_#ffffff] rounded-xl;
+}
+
+.dark .featured-neumorphism-inset {
+  @apply bg-[#2c2c2c] shadow-[inset_6px_6px_14px_#1f1f1f,_inset_-6px_-6px_14px_#3f3f3f];
+}
