@@ -17,7 +17,7 @@ function Hero() {
       {location.pathname === "/" ? ( 
           <div className="absolute top-8 sm:top-8 w-56 h-56 sm:w-44 sm:h-44 rounded-[2rem] overflow-hidden neumorphism p-2">
             <img
-              src="./profile.jpg"
+              src="/profile.jpg"
               alt="Profile"
               className="w-full h-full rounded-[1.5rem] object-cover object-[50%_15%] scale-125"
             />

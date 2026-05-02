@@ -127,7 +127,7 @@ function Nav() {
           <div className={`fixed top-6 left-6 space-y-4 z-50 sm:flex sm:flex-col sm:space-y-5 sm:space-x-4 dark:bg-[#2d2d2d] bg-[#e5e5e5] transition-all duration-500 ${
             !showFloatingButtons ? "opacity-0 translate-x-[-20px]" : "opacity-100 translate-x-0"}`}>
             <img
-              src="./profile.jpg"
+              src="/profile.jpg"
               alt="Profile"
               className="w-20 neumorphism rounded-4xl shadow-lg"
             />
